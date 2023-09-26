@@ -1,9 +1,112 @@
 * {
   margin: 0;
   padding: 0;
+  text-decoration: none;
   box-sizing: border-box;
+  list-style: none;
+}
+
+.container2 {
+  border: 6px solid rgba(98, 99, 46, 0.5);
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(98, 99, 46, 0.5);
+  padding: 20px;
+  display: block;
+  height: 900px;
 }
 
 body {
-  background-color: #fff7df;
+  background: linear-gradient(
+    to bottom,
+    rgb(215, 216, 207),
+    rgb(255, 184, 201),
+    rgb(151, 186, 255)
+  );
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 25px;
+}
+
+.perfil {
+  display: flex;
+  align-items: center;
+}
+
+.Imgbox img {
+  width: 200px;
+  border-radius: 1px;
+  border: 2px solid #fff;
+  box-shadow: 0px 2px 6px 0px;
+}
+
+.info {
+  margin-left: 20px;
+}
+
+.info h1 {
+  color: #313317f5;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(26, 29, 29, 0.452);
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.info ul {
+  padding: 0;
+}
+
+.info li {
+  font-size: 16px;
+  margin: 7px;
+}
+
+.bio h4 {
+  color: #313317f5;
+  margin: 25px 0 60px 25px;
+  font-size: 28px;
+  text-shadow: 2px 2px 4px rgba(26, 29, 29, 0.452);
+  font-family: "Josefin Sans", sans-serif;
+  width: 50%;
+  text-align: center;
+}
+
+.bio p {
+  width: 50%;
+  margin: 10px;
+  text-align: justify;
+  text-indent: 20px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  font-style: bold;
+}
+
+.sociallinks ul {
+  margin: 60px;
+}
+
+.sociallinks li {
+  display: inline;
+  margin: 0 100px 0 120px;
+}
+
+.sociallinks li img {
+  transition: transform 0.3s;
+}
+
+.sociallinks li a:hover img,
+.sociallinks li a:active img {
+  transform: scale(1.2);
+}
+
+.curriculo h2 {
+  color: #313317f5;
+  float: right;
+  width: 40%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0px;
+  margin: 108px 0 0 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-family: "Josefin Sans", sans-serif;
 }
