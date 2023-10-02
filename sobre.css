@@ -6,33 +6,39 @@
   list-style: none;
 }
 
+body {
+  background: rgb(255, 248, 220) cover;
+  margin: 25px;
+  padding: 0;
+}
+
 .container2 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
   border: 6px solid rgba(98, 99, 46, 0.5);
   border-radius: 8px;
   box-shadow: 0px 0px 10px rgba(98, 99, 46, 0.5);
-  padding: 20px;
-  display: block;
-  height: 900px;
 }
 
-body {
-  background: linear-gradient(
-    to bottom,
-    rgb(215, 216, 207),
-    rgb(255, 184, 201),
-    rgb(151, 186, 255)
-  );
-  background-size: cover;
-  background-attachment: fixed;
-  margin: 25px;
+.coluna {
+  width: 50%;
+  padding: 20px;
 }
 
 .perfil {
   display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.imgbox {
+  display: flex;
   align-items: center;
 }
 
-.Imgbox img {
+.imgbox img {
   width: 200px;
   border-radius: 1px;
   border: 2px solid #fff;
@@ -53,35 +59,44 @@ body {
 
 .info ul {
   padding: 0;
+  color: #000000b0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .info li {
   font-size: 16px;
   margin: 7px;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .bio h4 {
   color: #313317f5;
-  margin: 25px 0 60px 25px;
+  margin: 25px 0 40px 25px;
   font-size: 28px;
   text-shadow: 2px 2px 4px rgba(26, 29, 29, 0.452);
   font-family: "Josefin Sans", sans-serif;
-  width: 50%;
+  display: flex;
   text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .bio p {
-  width: 50%;
   margin: 10px;
   text-align: justify;
   text-indent: 20px;
   font-family: "Josefin Sans", sans-serif;
   font-size: 16px;
-  font-style: bold;
+}
+
+.sociallinks {
+  display: flex;
 }
 
 .sociallinks ul {
-  margin: 60px;
+  display: flex;
+  width: 50%;
+  margin: 40px 0 0 0;
 }
 
 .sociallinks li {
@@ -100,13 +115,40 @@ body {
 
 .curriculo h2 {
   color: #313317f5;
-  float: right;
-  width: 40%;
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 0px;
-  margin: 108px 0 0 0;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   font-family: "Josefin Sans", sans-serif;
+  margin: 52px 0 0 0;
+  text-align: center;
+}
+
+.curriculo ul {
+  margin: 20px 0 0 0;
+}
+
+.curriculo li {
+  margin: 1rem;
+  color: #000000b0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.curriculo p {
+  font-family: "Josefin Sans", sans-serif;
+  text-align: justify;
+}
+
+.certificados img:hover,
+.certificados img:active img {
+  transform: scale(1.2);
+}
+
+.certificados {
+  display: flex;
+  align-items: flex-start;
+  justify-content: right;
+  position: relative;
+}
+
+.certificados img {
+  display: flex;
+  margin: 200px 0 0 0;
 }
